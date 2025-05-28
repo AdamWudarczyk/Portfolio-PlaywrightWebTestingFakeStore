@@ -1,0 +1,10 @@
+{
+  "valid_user": {
+    "username": "automationtesting539@gmail.com",
+    "password": "validpass12@"
+  },
+  "invalid_user": {
+    "username": "wronguser",
+    "password": "wrongpass"
+  }
+}
