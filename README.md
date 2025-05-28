@@ -51,6 +51,14 @@ pytest -v
 ```bash
 pytest --html=reports/report.html --self-contained-html
 ```
+### 4. Run by tag (marker)
+
+```bash
+pytest -m login     # Login tests
+pytest -m shop      # Shop page tests
+pytest -m cart      # Cart functionality
+pytest -m e2e       # Full end-to-end flow
+```
 
 ## Project Structure
 
@@ -62,13 +70,21 @@ Portfolio-PlaywrightWebTestingFakeStore/\
 │   ├── base_page.py\
 │   ├── login_page.py\
 │   └── shop_page.py\
+│   └── cart_page.py\
 ├── tests/\
 │   ├── test_login.py\
-│   └── test_shop.py\
+│   ├── test_shop.py\
+│   ├── test_cart.py\
+│   └── test_e2e.py\
+├── reports/\
 ├── .gitignore\
 ├── pytest.ini\
 ├── requirements.txt\
 └── README.md\
+
+### Future Plans
+
+Add more various tests! 
 
 ____
 Created by Adam Wudarczyk
